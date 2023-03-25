@@ -27,9 +27,9 @@
     <h2 class="text-center mt-2 mb-4">
       About me
     </h2>
-    <p class="lead" style="color: rgb(100,100,100);">
-      ឈ្មោះ លី សុផាវីន Ly sophavin ថ្ងៃ ខែ ឆ្នាំ កំណេីត ០១.១២.២០០៤ អាស័យដ្ធានបច្ចុប្បន្ន ភូមិ ព្រែកចាម ឃុំបន្លិច ប្រាសាទ
-      ស្រុក ពាមរក៏ ខេត្ត ព្រៃវែង ,ឪពុកឈ្មោះ បូ វិបុល ម្ដាយ ឈ្មោះ យ៉ុន សុផល.
+    <p class="lead" style="color: rgb(50,50,50);">
+      ឈ្មោះ លី សុផាវីន Ly sophavin ថ្ងៃ ខែ ឆ្នាំ កំណេីត ០១.១២.២០០៤ អាស័យដ្ធានកំណេីត ភូមិ ព្រែកចាម ឃុំបន្លិច ប្រាសាទ
+      ស្រុក ពាមរក៏ ខេត្ត ព្រៃវែង ,ឪពុកឈ្មោះ បូ វិបុល ម្ដាយ ឈ្មោះ យ៉ុន សុផល,  ខ្ញុំមានបងប្អូន ២នាក់ ខ្ញុំជាកូនបង,
         <hr>
          Ly sophavin Date of Birth: 01/12/2004 Current Address: Prek Cham Village, Banlech Prasat Commune, Peam Ro District, Prey Veng Province.
     </p>
@@ -41,7 +41,9 @@
     <div>
       {% for course in courses %}
       <div style="margin-bottom:17px">
-        <h4 class="mt-2 mb-4 " style="color:rgb(120,120,120)">
+
+          <div class="col-9">
+        <h4  class= "border-botton" class="mt-2 mb-4 " style="color:rgb(40,40,40)">
           School Name : {{course['name school']}}
 
         </h4>
@@ -50,10 +52,14 @@
         </div>
 
         <div class="mt-2 mb-4 ">
+         
           studied year : {{course['Year']}}
         </div>
       </div>
-
+          </div>
+        <button  type="button" class="btn btn-outline-info btn-lg" class="mt-2 mb-4">Check</button>
+          <hr>
+        
       {% endfor %}
 
     </div>

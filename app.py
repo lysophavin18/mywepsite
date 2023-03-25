@@ -19,6 +19,12 @@ COURSES = [{
     'Location':
     "875J+JHH, ផ្លូវជាតិលេខ ១១, ពាមរក៍",
     'Year': '2019-2021'
+},
+          {
+    'id': 4,
+    'name school': "RUPP  Faculty Of Engineering Department Information engineering ",
+    'Location': "Russian Federation Boulevard, Toul Kork, Phnom Penh",
+    'Year': '2021-so on'
 }]
 
 
