@@ -1,69 +1,70 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 
-    <head>
-        <title>my First Website</title>
-        <style>
-            h1{
-                font-size: 40px;
-                font-family: Roboto;
-                font-weight: normal;
-                color:rgb(50,50,50);
-                text-align:center;
-             }
+<head>
+  <title>sophavinly.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+</head>
 
-            #banner{
-                
-               width:100%;
-               height:370px;
-               object-fit: cover;
-                
-            }
-            h2{
-                font-family:Roboto;
-                font-family:32;
-                color:rgb(100,100,100);
-                text-align:center;
-                font-weight:normal;
-                
-            }
-            .bodytext {
-                font-family:Roboto;
-                color: rgb(80,80,80);
-                
-            }
-            #container {
-                max-width :720px;
-                margin: 0 auto;
-            }
+<style>
+  #banner {
+    object-fit: cover;
+    width: 100%;
+    height: 370px;
+  }
+</style>
 
-            
-        </style>
-    </head> 
-     
-    <body>
-        <div id = "container">
-       
-        <h1>Ly sophavin </h1>
-        <img id = "banner" src = 
-         "https://mywepsite.lysophavin18.repl.co/static/banner.jpg"> 
-        <h2>About Sophavin</h2>
-           <p class ="bodytext">sophavin ly is a student The Faculty of Engineering of the Royal University of Phnom Penh, Department information technology engineering,roll asisatant of IT , He 18 years old and study in year 2 of department ITE Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, commodi! At qui ullam, sequi corrupti eligendi consequuntur totam eius libero nulla corporis praesentium quia maxime assumenda incidunt est quidem earum. 
-          </p>
-        
-           <h2>Open Positions </h2>
-           <p class="bodytext" >Show the Job here </p>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4" style="color:rgb(100,100,100)">
+      Ly Sophavin (លី សុផាវីន)
+    </h1>
+    <img class="img-fluid" id="banner" src="https://mywepsite.lysophavin18.repl.co/static/mypic.jpg">
+    <h2 class="text-center mt-2 mb-4">
+      About me
+    </h2>
+    <p class="lead" style="color: rgb(100,100,100);">
+      ឈ្មោះ លី សុផាវីន Ly sophavin ថ្ងៃ ខែ ឆ្នាំ កំណេីត ០១.១២.២០០៤ អាស័យដ្ធានបច្ចុប្បន្ន ភូមិ ព្រែកចាម ឃុំបន្លិច ប្រាសាទ
+      ស្រុក ពាមរក៏ ខេត្ត ព្រៃវែង ,ឪពុកឈ្មោះ បូ វិបុល ម្ដាយ ឈ្មោះ យ៉ុន សុផល.
+        <hr>
+         Ly sophavin Date of Birth: 01/12/2004 Current Address: Prek Cham Village, Banlech Prasat Commune, Peam Ro District, Prey Veng Province.
+    </p>
 
-            <div style ="text-align:center;">
-                <button>Content Us</button>
-                <p>
-                    copy right 2023, sophavinly
-                </p>
-            </div>
-          
+    <h2 class="text-center mt-2 mb-4">
+      Back Ground Studied
+      <hr>
+    </h2>
+    <div>
+      {% for course in courses %}
+      <div style="margin-bottom:17px">
+        <h4 class="mt-2 mb-4 " style="color:rgb(120,120,120)">
+          School Name : {{course['name school']}}
+
+        </h4>
+        <div class="mt-2 mb-4 ">
+          Location: {{course['Location']}}
+        </div>
+
+        <div class="mt-2 mb-4 ">
+          studied year : {{course['Year']}}
+        </div>
+      </div>
+
+      {% endfor %}
+
     </div>
-    </body>
-  
-    
-      
+    <div class="text-center">
+      <button class="btn btn-outline-primary btn-lg"> Content Us </button>
+      <p class="text-center mt-2 mb-4"> copy right 2023, sophavinly </p>
+    </div>
+
+  </div>
+</body>
+
+
+
 </html>
