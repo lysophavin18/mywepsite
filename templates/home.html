@@ -34,41 +34,49 @@
          Ly sophavin Date of Birth: 01/12/2004 Current Address: Prek Cham Village, Banlech Prasat Commune, Peam Ro District, Prey Veng Province.
     </p>
 
-    <h2 class="text-center mt-2 mb-4">
-      Back Ground Studied
-      <hr>
-    </h2>
-    <div>
-      {% for course in courses %}
-      <div style="margin-bottom:17px">
+    <h2 class="text-center mt-2 mb-4">   Back Ground Studied <hr> </h2>
+      
+   
+<div>
+                {% for course in courses %}
+           
+            <div  class="border-bottom row " style="margin-bottom:17px; padding-bottom:4px;">
+                <div class="col-10">
 
-          <div class="col-9">
-        <h4  class= "border-botton" class="mt-2 mb-4 " style="color:rgb(40,40,40)">
-          School Name : {{course['name school']}}
-
-        </h4>
-        <div class="mt-2 mb-4 ">
-          Location: {{course['Location']}}
-        </div>
-
-        <div class="mt-2 mb-4 ">
          
-          studied year : {{course['Year']}}
-        </div>
-      </div>
-          </div>
-        <button  type="button" class="btn btn-outline-info btn-lg" class="mt-2 mb-4">Check</button>
-          <hr>
-        
-      {% endfor %}
+        <h4 style="color:rgb(120,120,120); margin-bottom:4px">            
+            <b>School Name :</b>{{course['name school']}}
+        </h4>
 
-    </div>
+                    
+        <div >
+                <b> Location: {{course['Location']}}</b>  
+        </div>
+
+                    
+        <div>
+                <b>studied year : </b> {{course['Year']}}
+        </div>
+        </div>
+    
+                <div class="col-2"><button type="button" class="btn btn-outline-primary">Check</button>
+                
+                </div>
+               
+                
+           </div>
+       
+        
+                   {% endfor %}
+                </div>
+  </div>
+   
     <div class="text-center">
-      <button class="btn btn-outline-primary btn-lg"> Content Us </button>
+      <button class="btn btn-primary btn-lg"> Content Us </button>
       <p class="text-center mt-2 mb-4"> copy right 2023, sophavinly </p>
     </div>
 
-  </div>
+
 </body>
 
 
